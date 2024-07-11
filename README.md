@@ -1,5 +1,8 @@
 # DjangoGuide
 
+mkdir {database}_project
+cd {database}_project
+
 sudo apt install python3-pip
 
 pip install pipenv --user
