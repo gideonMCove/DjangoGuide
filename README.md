@@ -55,5 +55,12 @@ cd {database}_project
 
 python3 manage.py runserver
 
+# Models Example
+
+class Artist(models.Model):
+    name = models.CharField(max_length=100)
+    nationality = models.CharField(max_length=100)
+    photo_url = models.TextField()
+
 
 
