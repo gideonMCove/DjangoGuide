@@ -39,7 +39,7 @@ pipenv shell
     IF you are getting an error about a postgres user being needed, enter this:
         psql -U postgres -f settings.sql
 
-In tunr_django/settings.py, find the DATABASES constant dictionary. Let's edit it to look like this:
+In {database}_django/settings.py, find the DATABASES constant dictionary. Let's edit it to look like this:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
