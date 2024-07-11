@@ -26,7 +26,7 @@ pipenv shell
 
  django-admin startapp {database}
 
- In {database}_django/settings.py find the INSTALLED_APPS constant dictionary. On the bottom line of the INSTALLED_APPS list, add tunr. 
+ In {database}_django/settings.py find the INSTALLED_APPS constant dictionary. On the bottom line of the INSTALLED_APPS list, add {database}. 
 
  touch settings.sql(should be in root file of project)
 
