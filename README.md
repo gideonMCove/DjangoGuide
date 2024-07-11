@@ -28,7 +28,7 @@ pipenv shell
 
  In tunr_django/settings.py find the INSTALLED_APPS constant dictionary. On the bottom line of the INSTALLED_APPS list, add tunr. 
 
- touch settings.sql
+ touch settings.sql(should be in root file of project)
 
  inside settings.sql,    
     CREATE DATABASE {database};
@@ -49,6 +49,11 @@ In tunr_django/settings.py, find the DATABASES constant dictionary. Let's edit i
         'HOST': 'localhost'
     }
 }
+
+pipenv shell
+cd {database}_project
+
+python3 manage.py runserver
 
 
 
