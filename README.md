@@ -20,7 +20,7 @@ pipenv install django / this takes a while
 
 pipenv install psycopg2-binary / this takes a while
 
-pipenv run django-admin startproject tunr_django .
+pipenv run django-admin startproject {database}_django .
 
 pipenv shell
 
