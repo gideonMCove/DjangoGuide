@@ -12,6 +12,7 @@ cat << EOF >> ~/.zshrc
 export PATH="$(python3 -m site --user-base)/bin:\$PATH"
 EOF
 
+
 close terminal/open terminal
 
 pipenv --version / to confirm download
@@ -26,7 +27,7 @@ pipenv shell
 
  django-admin startapp {database}
 
- In {database}_django/settings.py find the INSTALLED_APPS constant dictionary. On the bottom line of the INSTALLED_APPS list, add {database}. 
+ In {database}_django/settings.py find the INSTALLED_APPS constant dictionary. On the bottom line of the INSTALLED_APPS list, add '{database}'. 
 
  touch settings.sql(should be in root file of project)
 
@@ -62,6 +63,11 @@ class Artist(models.Model):
     name = models.CharField(max_length=100)
     nationality = models.CharField(max_length=100)
     photo_url = models.TextField()
+    
+ python3 manage.py makemigrations
 
+ python3 manage.py migrate
+
+ python3 manage.py createsuperuser
 
 
