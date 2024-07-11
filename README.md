@@ -57,6 +57,7 @@ python3 manage.py runserver
 
 # Models Example
 
+(in /{database}_project/{database}/models.py)
 class Artist(models.Model):
     name = models.CharField(max_length=100)
     nationality = models.CharField(max_length=100)
