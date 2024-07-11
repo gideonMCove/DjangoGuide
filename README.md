@@ -24,7 +24,7 @@ pipenv run django-admin startproject {database}_django .
 
 pipenv shell
 
- django-admin startapp tunr
+ django-admin startapp {database}
 
  In tunr_django/settings.py find the INSTALLED_APPS constant dictionary. On the bottom line of the INSTALLED_APPS list, add tunr. 
 
