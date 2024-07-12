@@ -99,7 +99,19 @@ class Artist(models.Model):
  python3 manage.py migrate
 ```
 To create admin priviledges for your DB:
+
 ```sh
  python3 manage.py createsuperuser
 ```
+
+## REST FRAMEWORK
+
+in the pipenv shell,
+
+```sh
+pipenv install djangorestframework
+```
+Then add rest_framework to your installed apps in settings.py
+
+
 
