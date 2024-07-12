@@ -13,13 +13,13 @@ export PATH="$(python3 -m site --user-base)/bin:\$PATH"
 EOF
 
 
-close terminal/open terminal
+***close terminal/open terminal***
 
 pipenv --version / to confirm download
 
 pipenv install django / this takes a while
 
-pipenv install psycopg2-binary / this takes a while
+pipenv install psycopg2-binary  
 
 pipenv run django-admin startproject {database}_django .
 
